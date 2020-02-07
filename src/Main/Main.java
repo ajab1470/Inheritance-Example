@@ -1,3 +1,6 @@
+package Main;
+import Code.*;
+
 public class Main {
     public static void main(String[] args) {
         Cat cat0 = new Cat("Fluffy", 12, 35.7);
