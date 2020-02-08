@@ -62,4 +62,9 @@ public abstract class Animal {
      * @return true if this liked the other animal, false otherwise
      */
     public abstract boolean likes(Animal other);
+
+    @Override //toString is overridden from Object, a default super class of every java class
+    public String toString() { //a toString is added to print the attributes of an animal in the example
+        return getName() + " is " + length + " inches long and is " + color + "-colored.";
+    }
 }
