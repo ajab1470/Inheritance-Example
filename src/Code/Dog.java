@@ -3,7 +3,7 @@ package Code;
 /**
  * author: Ashley Beckers
  * description: The dog class is a class that describes a dog animal.
- * Read this class after reading Animal so you can understand the the inherited things
+ * Read this class after reading Animal so you can understand the superclass and the abstract methods
  */
 public class Dog extends Animal {
     //We only need the fields provided by animal, so none need to be specified here
@@ -21,7 +21,7 @@ public class Dog extends Animal {
     }
 
     //the override keyword is used to indicate this is replacing a method from another class
-    //using @Override replaces documentation (the reader should refer to the docs for the original)
+    //using @Override replaces documentation (the reader should refer to the docs of the original)
     @Override
     public void speak() {
         System.out.println("Woof");
@@ -35,8 +35,8 @@ public class Dog extends Animal {
     }
 
     /**
-     * If you are overriding an abstract method where the rules are implementation dependent, you should leave a block
-     *   comment like this one
+     * If you are overriding an abstract method where the rules are implementation dependent (will be different for each
+     *   child class), you should leave a block comment like this one:
      * A dog likes every other animal
      */
     @Override

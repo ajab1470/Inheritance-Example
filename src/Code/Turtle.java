@@ -9,11 +9,13 @@ package Code;
 public class Turtle extends Animal {
     /**
      * creates a turtle object
+     * turtles start at 4 inches
      * @param name the name to assign turtle (Before the mandatory "os")
      * @param color the shell color
      */
     public Turtle(String name, String color) {
         super(name, color);
+        super.length = 4.0;
     }
 
     @Override

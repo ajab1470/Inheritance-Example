@@ -2,8 +2,8 @@ package Code;
 
 /**
  * author: Ashley Beckers
- * description: The cat class is a class that describes a cat animal. For the purposes of this example, all cats are
- *   standoffish
+ * description: The cat class is a class that describes a cat animal. For the purposes of this example, a cat starts out
+ *   with a length, and has specific rules about who they like
  *   Read this class after reading Dog if you are unfamiliar with the basics of extending an abstract class
  */
 
@@ -16,7 +16,7 @@ public class Cat extends Animal {
      */
     public Cat(String name, double length, String color) {
         super(name, color); //Don't forget to always start your constructor with the super constructor
-        super.length = length;
+        super.length = length; //we used the protected keyword for length in Animal, so we can access it here in Cat
     }
 
     /**
